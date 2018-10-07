@@ -1,5 +1,9 @@
 const columnCount = 7;
 
 function deal() {
-    alert("Deal!");
+    for (let i = 0; i<7;i++) {
+        let card = this.cards[i];
+
+        this.columns[i].cards.push(card);
+    }
 }
